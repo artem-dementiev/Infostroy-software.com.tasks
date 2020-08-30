@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 100%;
+}
+
+.start, .userbox {
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.start{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    transform: translate(-50%, -50%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e3e3e3;
+}
+.classroom {
+    display: none;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+.messages {
+    margin-bottom: 5px;
+}
+
+.messages .msg {
+    width: auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: flex;
+}
+
+.messages .from {
+    flex-grow: 8;
+    text-align: start;
+}
+
+
+.msg img{
+    width: 20px;
+}
+#username{
+    width: 50%;
+    margin: auto;
+}
+#logIn{
+    width: 50%;
+    margin: 2px auto;
+}
+/* ====================================== */
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+}
+ul li {
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+ul li:hover{
+    background-color: lightgrey;
+}
+
+ul ul{
+    position: absolute;
+    min-width: 200px;
+    background-color: lightgrey;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+    background-color: #e3e3e3;
+}
+ul li:hover ul{
+    display: block;
+}
+
+ul li img{
+    float: right;
+    padding-left: 20px;
+    width: 10px;
+}
+.navLeft{
+    flex-grow: 2;
+}
+.navCenter{
+    flex-grow: 6;
+}
+.navRight{
+    flex-grow: 2;
+}
+.navRight div{
+    display: flex;
+    justify-content: flex-end;
+}
+.navRight ul ul{
+    margin-left: -15px;
+}

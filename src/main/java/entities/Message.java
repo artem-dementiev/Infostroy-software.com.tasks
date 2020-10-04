@@ -5,9 +5,6 @@ public class Message {
     private String name;
     private String status;
     private String action;
-
-
-
     private String memberList;
 
     public Message() {
@@ -49,6 +46,14 @@ public class Message {
         this.memberList = memberList;
     }
 
-
+    @Override
+    public String toString() {
+        return "Message{" +
+                "name='" + name + '\'' +
+                ", status='" + status + '\'' +
+                ", action='" + action + '\'' +
+                ", memberList='" + memberList + '\'' +
+                '}';
+    }
 }
 
